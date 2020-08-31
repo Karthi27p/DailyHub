@@ -1,0 +1,869 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 50;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		A71E481024F6993D00F2F15A /* DHNewsText.swift in Sources */ = {isa = PBXBuildFile; fileRef = A71E480F24F6993D00F2F15A /* DHNewsText.swift */; };
+		A71E481324F69C7600F2F15A /* DHNewsText.xib in Resources */ = {isa = PBXBuildFile; fileRef = A71E481224F69C7600F2F15A /* DHNewsText.xib */; };
+		A73BD28A24DEF7A100547BF9 /* DHStyles.swift in Sources */ = {isa = PBXBuildFile; fileRef = A73BD28924DEF7A100547BF9 /* DHStyles.swift */; };
+		A75547A024DAFC4300B88030 /* Styles.json in Resources */ = {isa = PBXBuildFile; fileRef = A755479F24DAFC4300B88030 /* Styles.json */; };
+		A75547A224DAFFEC00B88030 /* DHTextFieldType.swift in Sources */ = {isa = PBXBuildFile; fileRef = A75547A124DAFFEC00B88030 /* DHTextFieldType.swift */; };
+		A75547A424DB012500B88030 /* DHTextProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = A75547A324DB012500B88030 /* DHTextProperties.swift */; };
+		A756F2E8249F59B400DC87CB /* DHArticleCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = A756F2E7249F59B400DC87CB /* DHArticleCollectionViewCell.swift */; };
+		A756F2EA249FA96D00DC87CB /* DHNewsCellViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = A756F2E9249FA96D00DC87CB /* DHNewsCellViewModel.swift */; };
+		A75B265824FB755D00686770 /* DHNewsTextModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = A75B265724FB755D00686770 /* DHNewsTextModel.swift */; };
+		A75B265A24FB7B0000686770 /* DHNews.swift in Sources */ = {isa = PBXBuildFile; fileRef = A75B265924FB7B0000686770 /* DHNews.swift */; };
+		A75B265C24FB7B7900686770 /* DHNews.xib in Resources */ = {isa = PBXBuildFile; fileRef = A75B265B24FB7B7900686770 /* DHNews.xib */; };
+		A75B265E24FB81C700686770 /* DHTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = A75B265D24FB81C700686770 /* DHTableViewCell.swift */; };
+		A75B266224FB8B1700686770 /* DHNewsCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = A75B266124FB8B1700686770 /* DHNewsCell.swift */; };
+		A75B266424FB8B6800686770 /* DHNewsCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = A75B266324FB8B6800686770 /* DHNewsCell.xib */; };
+		A78BB6F924C49859003377D6 /* DHElectricityView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A78BB6F824C49859003377D6 /* DHElectricityView.swift */; };
+		A78C29F3248D225D00556839 /* DHNewsViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = A78C29F2248D225D00556839 /* DHNewsViewModel.swift */; };
+		A78C29F5248D22D200556839 /* DHApiService.swift in Sources */ = {isa = PBXBuildFile; fileRef = A78C29F4248D22D200556839 /* DHApiService.swift */; };
+		A78C29F9248D3EC500556839 /* DHArticleTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = A78C29F8248D3EC500556839 /* DHArticleTableViewCell.swift */; };
+		A78EA32524EB8E1E004B16E4 /* DHNewsDetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A78EA32424EB8E1E004B16E4 /* DHNewsDetailViewController.swift */; };
+		A791A29624E82E9200CCAD80 /* DHKeyboardAdaptive.swift in Sources */ = {isa = PBXBuildFile; fileRef = A791A29524E82E9200CCAD80 /* DHKeyboardAdaptive.swift */; };
+		A797CF5E24F3FACD00A95EA5 /* DHFormField.swift in Sources */ = {isa = PBXBuildFile; fileRef = A797CF5D24F3FACD00A95EA5 /* DHFormField.swift */; };
+		A797CF6124F4034B00A95EA5 /* DHFuelMileageView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A797CF6024F4034B00A95EA5 /* DHFuelMileageView.swift */; };
+		A79A192A24A8D8E400F01EB4 /* Tarrif.json in Resources */ = {isa = PBXBuildFile; fileRef = A79A192924A8D8E400F01EB4 /* Tarrif.json */; };
+		A79A192C24A8DACA00F01EB4 /* DHElectricityTarrifModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = A79A192B24A8DACA00F01EB4 /* DHElectricityTarrifModel.swift */; };
+		A79A192E24A8DC5700F01EB4 /* DHBiMonthlyConsumption.swift in Sources */ = {isa = PBXBuildFile; fileRef = A79A192D24A8DC5700F01EB4 /* DHBiMonthlyConsumption.swift */; };
+		A79A193024A8DD2600F01EB4 /* DHSplitRate.swift in Sources */ = {isa = PBXBuildFile; fileRef = A79A192F24A8DD2600F01EB4 /* DHSplitRate.swift */; };
+		A79A193224A8E2D800F01EB4 /* DHElectricityBillCalculatorViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A79A193124A8E2D800F01EB4 /* DHElectricityBillCalculatorViewController.swift */; };
+		A79A193724A8E63800F01EB4 /* DHElectricityBillViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = A79A193624A8E63800F01EB4 /* DHElectricityBillViewModel.swift */; };
+		A79CB8D4248D05B300AEBFFB /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = A79CB8D3248D05B300AEBFFB /* AppDelegate.swift */; };
+		A79CB8D6248D05B300AEBFFB /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = A79CB8D5248D05B300AEBFFB /* SceneDelegate.swift */; };
+		A79CB8D8248D05B300AEBFFB /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A79CB8D7248D05B300AEBFFB /* ViewController.swift */; };
+		A79CB8DB248D05B300AEBFFB /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A79CB8D9248D05B300AEBFFB /* Main.storyboard */; };
+		A79CB8DD248D05B600AEBFFB /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A79CB8DC248D05B600AEBFFB /* Assets.xcassets */; };
+		A79CB8E0248D05B600AEBFFB /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A79CB8DE248D05B600AEBFFB /* LaunchScreen.storyboard */; };
+		A79CB8EB248D05B700AEBFFB /* DailyHubTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = A79CB8EA248D05B700AEBFFB /* DailyHubTests.swift */; };
+		A79CB8F6248D05B700AEBFFB /* DailyHubUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = A79CB8F5248D05B700AEBFFB /* DailyHubUITests.swift */; };
+		A79CB905248D060400AEBFFB /* DHArticleModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = A79CB904248D060400AEBFFB /* DHArticleModel.swift */; };
+		A79CB907248D08B600AEBFFB /* DHArticleSourceModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = A79CB906248D08B600AEBFFB /* DHArticleSourceModel.swift */; };
+		A7A6D21B24E01D80003E7BF5 /* Utility.swift in Sources */ = {isa = PBXBuildFile; fileRef = A7A6D21A24E01D80003E7BF5 /* Utility.swift */; };
+		A7A6D21D24E0279D003E7BF5 /* DHText.swift in Sources */ = {isa = PBXBuildFile; fileRef = A7A6D21C24E0279D003E7BF5 /* DHText.swift */; };
+		A7A6D21F24E02AA4003E7BF5 /* DHTextType.swift in Sources */ = {isa = PBXBuildFile; fileRef = A7A6D21E24E02AA4003E7BF5 /* DHTextType.swift */; };
+		A7A6D22124E032F4003E7BF5 /* DHElectricityDetailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A7A6D22024E032F4003E7BF5 /* DHElectricityDetailView.swift */; };
+		A7AC258624A798C400F92481 /* DHSplitMoneyViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A7AC258524A798C400F92481 /* DHSplitMoneyViewController.swift */; };
+		A7AC258824A79A3800F92481 /* DHSplitMoneyView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A7AC258724A79A3800F92481 /* DHSplitMoneyView.swift */; };
+		A7DB8E9C24F2435500A03CF9 /* DHImageViewType.swift in Sources */ = {isa = PBXBuildFile; fileRef = A7DB8E9B24F2435500A03CF9 /* DHImageViewType.swift */; };
+		A7DB8E9E24F2443600A03CF9 /* DHLabelType.swift in Sources */ = {isa = PBXBuildFile; fileRef = A7DB8E9D24F2443600A03CF9 /* DHLabelType.swift */; };
+		A7DB8EA224F2473C00A03CF9 /* DHLabel.swift in Sources */ = {isa = PBXBuildFile; fileRef = A7DB8EA124F2473C00A03CF9 /* DHLabel.swift */; };
+		A7DB8EA424F2498200A03CF9 /* DHImageView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A7DB8EA324F2498200A03CF9 /* DHImageView.swift */; };
+		A7DC15D424D8558C00E28BDD /* DHTextField.swift in Sources */ = {isa = PBXBuildFile; fileRef = A7DC15D324D8558C00E28BDD /* DHTextField.swift */; };
+		A7DC15D824D85B7A00E28BDD /* DHViewProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = A7DC15D724D85B7A00E28BDD /* DHViewProperties.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		A79CB8E7248D05B700AEBFFB /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = A79CB8C8248D05B300AEBFFB /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = A79CB8CF248D05B300AEBFFB;
+			remoteInfo = DailyHub;
+		};
+		A79CB8F2248D05B700AEBFFB /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = A79CB8C8248D05B300AEBFFB /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = A79CB8CF248D05B300AEBFFB;
+			remoteInfo = DailyHub;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		A71E480F24F6993D00F2F15A /* DHNewsText.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DHNewsText.swift; sourceTree = "<group>"; };
+		A71E481224F69C7600F2F15A /* DHNewsText.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = DHNewsText.xib; sourceTree = "<group>"; };
+		A73BD28924DEF7A100547BF9 /* DHStyles.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DHStyles.swift; sourceTree = "<group>"; };
+		A755479F24DAFC4300B88030 /* Styles.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = Styles.json; sourceTree = "<group>"; };
+		A75547A124DAFFEC00B88030 /* DHTextFieldType.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DHTextFieldType.swift; sourceTree = "<group>"; };
+		A75547A324DB012500B88030 /* DHTextProperties.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DHTextProperties.swift; sourceTree = "<group>"; };
+		A756F2E7249F59B400DC87CB /* DHArticleCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DHArticleCollectionViewCell.swift; sourceTree = "<group>"; };
+		A756F2E9249FA96D00DC87CB /* DHNewsCellViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DHNewsCellViewModel.swift; sourceTree = "<group>"; };
+		A75B265724FB755D00686770 /* DHNewsTextModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DHNewsTextModel.swift; sourceTree = "<group>"; };
+		A75B265924FB7B0000686770 /* DHNews.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DHNews.swift; sourceTree = "<group>"; };
+		A75B265B24FB7B7900686770 /* DHNews.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = DHNews.xib; sourceTree = "<group>"; };
+		A75B265D24FB81C700686770 /* DHTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DHTableViewCell.swift; sourceTree = "<group>"; };
+		A75B266124FB8B1700686770 /* DHNewsCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DHNewsCell.swift; sourceTree = "<group>"; };
+		A75B266324FB8B6800686770 /* DHNewsCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = DHNewsCell.xib; sourceTree = "<group>"; };
+		A78BB6F824C49859003377D6 /* DHElectricityView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DHElectricityView.swift; sourceTree = "<group>"; };
+		A78C29F2248D225D00556839 /* DHNewsViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DHNewsViewModel.swift; sourceTree = "<group>"; };
+		A78C29F4248D22D200556839 /* DHApiService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DHApiService.swift; sourceTree = "<group>"; };
+		A78C29F8248D3EC500556839 /* DHArticleTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DHArticleTableViewCell.swift; sourceTree = "<group>"; };
+		A78EA32424EB8E1E004B16E4 /* DHNewsDetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DHNewsDetailViewController.swift; sourceTree = "<group>"; };
+		A791A29524E82E9200CCAD80 /* DHKeyboardAdaptive.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DHKeyboardAdaptive.swift; sourceTree = "<group>"; };
+		A797CF5D24F3FACD00A95EA5 /* DHFormField.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DHFormField.swift; sourceTree = "<group>"; };
+		A797CF6024F4034B00A95EA5 /* DHFuelMileageView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DHFuelMileageView.swift; sourceTree = "<group>"; };
+		A79A192924A8D8E400F01EB4 /* Tarrif.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = Tarrif.json; sourceTree = "<group>"; };
+		A79A192B24A8DACA00F01EB4 /* DHElectricityTarrifModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DHElectricityTarrifModel.swift; sourceTree = "<group>"; };
+		A79A192D24A8DC5700F01EB4 /* DHBiMonthlyConsumption.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DHBiMonthlyConsumption.swift; sourceTree = "<group>"; };
+		A79A192F24A8DD2600F01EB4 /* DHSplitRate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DHSplitRate.swift; sourceTree = "<group>"; };
+		A79A193124A8E2D800F01EB4 /* DHElectricityBillCalculatorViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DHElectricityBillCalculatorViewController.swift; sourceTree = "<group>"; };
+		A79A193624A8E63800F01EB4 /* DHElectricityBillViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DHElectricityBillViewModel.swift; sourceTree = "<group>"; };
+		A79CB8D0248D05B300AEBFFB /* DailyHub.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = DailyHub.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		A79CB8D3248D05B300AEBFFB /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		A79CB8D5248D05B300AEBFFB /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
+		A79CB8D7248D05B300AEBFFB /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		A79CB8DA248D05B300AEBFFB /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		A79CB8DC248D05B600AEBFFB /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		A79CB8DF248D05B600AEBFFB /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		A79CB8E1248D05B600AEBFFB /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		A79CB8E6248D05B700AEBFFB /* DailyHubTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = DailyHubTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		A79CB8EA248D05B700AEBFFB /* DailyHubTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DailyHubTests.swift; sourceTree = "<group>"; };
+		A79CB8EC248D05B700AEBFFB /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		A79CB8F1248D05B700AEBFFB /* DailyHubUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = DailyHubUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		A79CB8F5248D05B700AEBFFB /* DailyHubUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DailyHubUITests.swift; sourceTree = "<group>"; };
+		A79CB8F7248D05B700AEBFFB /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		A79CB904248D060400AEBFFB /* DHArticleModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DHArticleModel.swift; sourceTree = "<group>"; };
+		A79CB906248D08B600AEBFFB /* DHArticleSourceModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DHArticleSourceModel.swift; sourceTree = "<group>"; };
+		A7A6D21A24E01D80003E7BF5 /* Utility.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Utility.swift; sourceTree = "<group>"; };
+		A7A6D21C24E0279D003E7BF5 /* DHText.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DHText.swift; sourceTree = "<group>"; };
+		A7A6D21E24E02AA4003E7BF5 /* DHTextType.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DHTextType.swift; sourceTree = "<group>"; };
+		A7A6D22024E032F4003E7BF5 /* DHElectricityDetailView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DHElectricityDetailView.swift; sourceTree = "<group>"; };
+		A7AC258524A798C400F92481 /* DHSplitMoneyViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DHSplitMoneyViewController.swift; sourceTree = "<group>"; };
+		A7AC258724A79A3800F92481 /* DHSplitMoneyView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DHSplitMoneyView.swift; sourceTree = "<group>"; };
+		A7DB8E9B24F2435500A03CF9 /* DHImageViewType.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DHImageViewType.swift; sourceTree = "<group>"; };
+		A7DB8E9D24F2443600A03CF9 /* DHLabelType.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DHLabelType.swift; sourceTree = "<group>"; };
+		A7DB8EA124F2473C00A03CF9 /* DHLabel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DHLabel.swift; sourceTree = "<group>"; };
+		A7DB8EA324F2498200A03CF9 /* DHImageView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DHImageView.swift; sourceTree = "<group>"; };
+		A7DC15D324D8558C00E28BDD /* DHTextField.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DHTextField.swift; sourceTree = "<group>"; };
+		A7DC15D724D85B7A00E28BDD /* DHViewProperties.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DHViewProperties.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		A79CB8CD248D05B300AEBFFB /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		A79CB8E3248D05B700AEBFFB /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		A79CB8EE248D05B700AEBFFB /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		A71E481124F69C4D00F2F15A /* News */ = {
+			isa = PBXGroup;
+			children = (
+				A71E480F24F6993D00F2F15A /* DHNewsText.swift */,
+				A75B265724FB755D00686770 /* DHNewsTextModel.swift */,
+				A71E481224F69C7600F2F15A /* DHNewsText.xib */,
+			);
+			path = News;
+			sourceTree = "<group>";
+		};
+		A75B265F24FB8ABD00686770 /* News */ = {
+			isa = PBXGroup;
+			children = (
+				A75B265924FB7B0000686770 /* DHNews.swift */,
+				A75B265B24FB7B7900686770 /* DHNews.xib */,
+			);
+			path = News;
+			sourceTree = "<group>";
+		};
+		A75B266024FB8AF500686770 /* Cells */ = {
+			isa = PBXGroup;
+			children = (
+				A75B266124FB8B1700686770 /* DHNewsCell.swift */,
+				A75B266324FB8B6800686770 /* DHNewsCell.xib */,
+				A75B265D24FB81C700686770 /* DHTableViewCell.swift */,
+			);
+			path = Cells;
+			sourceTree = "<group>";
+		};
+		A797CF5C24F3F6B500A95EA5 /* Molecules */ = {
+			isa = PBXGroup;
+			children = (
+				A797CF5D24F3FACD00A95EA5 /* DHFormField.swift */,
+				A71E481124F69C4D00F2F15A /* News */,
+			);
+			path = Molecules;
+			sourceTree = "<group>";
+		};
+		A797CF5F24F4032A00A95EA5 /* Organisms */ = {
+			isa = PBXGroup;
+			children = (
+				A75B266024FB8AF500686770 /* Cells */,
+				A75B265F24FB8ABD00686770 /* News */,
+				A7A30B3A24FBF58000EEBEB4 /* Mileage */,
+			);
+			path = Organisms;
+			sourceTree = "<group>";
+		};
+		A79A192824A8D89D00F01EB4 /* StubData */ = {
+			isa = PBXGroup;
+			children = (
+				A79A192924A8D8E400F01EB4 /* Tarrif.json */,
+			);
+			path = StubData;
+			sourceTree = "<group>";
+		};
+		A79A193324A8E59A00F01EB4 /* DHNews */ = {
+			isa = PBXGroup;
+			children = (
+				A79CB8D7248D05B300AEBFFB /* ViewController.swift */,
+				A78EA32424EB8E1E004B16E4 /* DHNewsDetailViewController.swift */,
+				A78C29F2248D225D00556839 /* DHNewsViewModel.swift */,
+				A756F2E9249FA96D00DC87CB /* DHNewsCellViewModel.swift */,
+				A78C29F8248D3EC500556839 /* DHArticleTableViewCell.swift */,
+				A756F2E7249F59B400DC87CB /* DHArticleCollectionViewCell.swift */,
+			);
+			path = DHNews;
+			sourceTree = "<group>";
+		};
+		A79A193424A8E5BF00F01EB4 /* DHSplitMoney */ = {
+			isa = PBXGroup;
+			children = (
+				A7AC258524A798C400F92481 /* DHSplitMoneyViewController.swift */,
+				A7AC258724A79A3800F92481 /* DHSplitMoneyView.swift */,
+			);
+			path = DHSplitMoney;
+			sourceTree = "<group>";
+		};
+		A79A193524A8E5E700F01EB4 /* DHElecreticityBill */ = {
+			isa = PBXGroup;
+			children = (
+				A79A193124A8E2D800F01EB4 /* DHElectricityBillCalculatorViewController.swift */,
+				A79A193624A8E63800F01EB4 /* DHElectricityBillViewModel.swift */,
+				A7A6D22024E032F4003E7BF5 /* DHElectricityDetailView.swift */,
+				A78BB6F824C49859003377D6 /* DHElectricityView.swift */,
+			);
+			path = DHElecreticityBill;
+			sourceTree = "<group>";
+		};
+		A79CB8C7248D05B300AEBFFB = {
+			isa = PBXGroup;
+			children = (
+				A797CF5F24F4032A00A95EA5 /* Organisms */,
+				A797CF5C24F3F6B500A95EA5 /* Molecules */,
+				A7DC15D224D8556D00E28BDD /* Atoms */,
+				A79A192824A8D89D00F01EB4 /* StubData */,
+				A7A30B3924FBF4DD00EEBEB4 /* Templates */,
+				A79CB8D2248D05B300AEBFFB /* DailyHub */,
+				A79CB903248D05DF00AEBFFB /* Model */,
+				A79CB8E9248D05B700AEBFFB /* DailyHubTests */,
+				A79CB8F4248D05B700AEBFFB /* DailyHubUITests */,
+				A79CB8D1248D05B300AEBFFB /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		A79CB8D1248D05B300AEBFFB /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				A79CB8D0248D05B300AEBFFB /* DailyHub.app */,
+				A79CB8E6248D05B700AEBFFB /* DailyHubTests.xctest */,
+				A79CB8F1248D05B700AEBFFB /* DailyHubUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		A79CB8D2248D05B300AEBFFB /* DailyHub */ = {
+			isa = PBXGroup;
+			children = (
+				A79CB8D3248D05B300AEBFFB /* AppDelegate.swift */,
+				A79CB8D5248D05B300AEBFFB /* SceneDelegate.swift */,
+				A78C29F4248D22D200556839 /* DHApiService.swift */,
+				A79CB8D9248D05B300AEBFFB /* Main.storyboard */,
+				A79CB8DC248D05B600AEBFFB /* Assets.xcassets */,
+				A79CB8DE248D05B600AEBFFB /* LaunchScreen.storyboard */,
+				A79CB8E1248D05B600AEBFFB /* Info.plist */,
+				A7A6D21A24E01D80003E7BF5 /* Utility.swift */,
+			);
+			path = DailyHub;
+			sourceTree = "<group>";
+		};
+		A79CB8E9248D05B700AEBFFB /* DailyHubTests */ = {
+			isa = PBXGroup;
+			children = (
+				A79CB8EA248D05B700AEBFFB /* DailyHubTests.swift */,
+				A79CB8EC248D05B700AEBFFB /* Info.plist */,
+			);
+			path = DailyHubTests;
+			sourceTree = "<group>";
+		};
+		A79CB8F4248D05B700AEBFFB /* DailyHubUITests */ = {
+			isa = PBXGroup;
+			children = (
+				A79CB8F5248D05B700AEBFFB /* DailyHubUITests.swift */,
+				A79CB8F7248D05B700AEBFFB /* Info.plist */,
+			);
+			path = DailyHubUITests;
+			sourceTree = "<group>";
+		};
+		A79CB903248D05DF00AEBFFB /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				A79CB904248D060400AEBFFB /* DHArticleModel.swift */,
+				A79A192B24A8DACA00F01EB4 /* DHElectricityTarrifModel.swift */,
+				A79A192D24A8DC5700F01EB4 /* DHBiMonthlyConsumption.swift */,
+				A79A192F24A8DD2600F01EB4 /* DHSplitRate.swift */,
+				A79CB906248D08B600AEBFFB /* DHArticleSourceModel.swift */,
+				A755479F24DAFC4300B88030 /* Styles.json */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		A7A30B3924FBF4DD00EEBEB4 /* Templates */ = {
+			isa = PBXGroup;
+			children = (
+				A79A193524A8E5E700F01EB4 /* DHElecreticityBill */,
+				A79A193324A8E59A00F01EB4 /* DHNews */,
+				A79A193424A8E5BF00F01EB4 /* DHSplitMoney */,
+			);
+			path = Templates;
+			sourceTree = "<group>";
+		};
+		A7A30B3A24FBF58000EEBEB4 /* Mileage */ = {
+			isa = PBXGroup;
+			children = (
+				A797CF6024F4034B00A95EA5 /* DHFuelMileageView.swift */,
+			);
+			path = Mileage;
+			sourceTree = "<group>";
+		};
+		A7DB8E9A24F23DC500A03CF9 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				A7A6D21E24E02AA4003E7BF5 /* DHTextType.swift */,
+				A73BD28924DEF7A100547BF9 /* DHStyles.swift */,
+				A75547A324DB012500B88030 /* DHTextProperties.swift */,
+				A75547A124DAFFEC00B88030 /* DHTextFieldType.swift */,
+				A7DC15D724D85B7A00E28BDD /* DHViewProperties.swift */,
+				A7DB8E9B24F2435500A03CF9 /* DHImageViewType.swift */,
+				A7DB8E9D24F2443600A03CF9 /* DHLabelType.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		A7DC15D224D8556D00E28BDD /* Atoms */ = {
+			isa = PBXGroup;
+			children = (
+				A7DC15D324D8558C00E28BDD /* DHTextField.swift */,
+				A791A29524E82E9200CCAD80 /* DHKeyboardAdaptive.swift */,
+				A7A6D21C24E0279D003E7BF5 /* DHText.swift */,
+				A7DB8EA124F2473C00A03CF9 /* DHLabel.swift */,
+				A7DB8EA324F2498200A03CF9 /* DHImageView.swift */,
+				A7DB8E9A24F23DC500A03CF9 /* Model */,
+			);
+			path = Atoms;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		A79CB8CF248D05B300AEBFFB /* DailyHub */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = A79CB8FA248D05B700AEBFFB /* Build configuration list for PBXNativeTarget "DailyHub" */;
+			buildPhases = (
+				A79CB8CC248D05B300AEBFFB /* Sources */,
+				A79CB8CD248D05B300AEBFFB /* Frameworks */,
+				A79CB8CE248D05B300AEBFFB /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = DailyHub;
+			productName = DailyHub;
+			productReference = A79CB8D0248D05B300AEBFFB /* DailyHub.app */;
+			productType = "com.apple.product-type.application";
+		};
+		A79CB8E5248D05B700AEBFFB /* DailyHubTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = A79CB8FD248D05B700AEBFFB /* Build configuration list for PBXNativeTarget "DailyHubTests" */;
+			buildPhases = (
+				A79CB8E2248D05B700AEBFFB /* Sources */,
+				A79CB8E3248D05B700AEBFFB /* Frameworks */,
+				A79CB8E4248D05B700AEBFFB /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				A79CB8E8248D05B700AEBFFB /* PBXTargetDependency */,
+			);
+			name = DailyHubTests;
+			productName = DailyHubTests;
+			productReference = A79CB8E6248D05B700AEBFFB /* DailyHubTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		A79CB8F0248D05B700AEBFFB /* DailyHubUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = A79CB900248D05B700AEBFFB /* Build configuration list for PBXNativeTarget "DailyHubUITests" */;
+			buildPhases = (
+				A79CB8ED248D05B700AEBFFB /* Sources */,
+				A79CB8EE248D05B700AEBFFB /* Frameworks */,
+				A79CB8EF248D05B700AEBFFB /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				A79CB8F3248D05B700AEBFFB /* PBXTargetDependency */,
+			);
+			name = DailyHubUITests;
+			productName = DailyHubUITests;
+			productReference = A79CB8F1248D05B700AEBFFB /* DailyHubUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		A79CB8C8248D05B300AEBFFB /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 1130;
+				LastUpgradeCheck = 1130;
+				ORGANIZATIONNAME = Karthi;
+				TargetAttributes = {
+					A79CB8CF248D05B300AEBFFB = {
+						CreatedOnToolsVersion = 11.3.1;
+					};
+					A79CB8E5248D05B700AEBFFB = {
+						CreatedOnToolsVersion = 11.3.1;
+						TestTargetID = A79CB8CF248D05B300AEBFFB;
+					};
+					A79CB8F0248D05B700AEBFFB = {
+						CreatedOnToolsVersion = 11.3.1;
+						TestTargetID = A79CB8CF248D05B300AEBFFB;
+					};
+				};
+			};
+			buildConfigurationList = A79CB8CB248D05B300AEBFFB /* Build configuration list for PBXProject "DailyHub" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = A79CB8C7248D05B300AEBFFB;
+			productRefGroup = A79CB8D1248D05B300AEBFFB /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				A79CB8CF248D05B300AEBFFB /* DailyHub */,
+				A79CB8E5248D05B700AEBFFB /* DailyHubTests */,
+				A79CB8F0248D05B700AEBFFB /* DailyHubUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		A79CB8CE248D05B300AEBFFB /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A75B266424FB8B6800686770 /* DHNewsCell.xib in Resources */,
+				A79CB8E0248D05B600AEBFFB /* LaunchScreen.storyboard in Resources */,
+				A71E481324F69C7600F2F15A /* DHNewsText.xib in Resources */,
+				A79CB8DD248D05B600AEBFFB /* Assets.xcassets in Resources */,
+				A75B265C24FB7B7900686770 /* DHNews.xib in Resources */,
+				A75547A024DAFC4300B88030 /* Styles.json in Resources */,
+				A79CB8DB248D05B300AEBFFB /* Main.storyboard in Resources */,
+				A79A192A24A8D8E400F01EB4 /* Tarrif.json in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		A79CB8E4248D05B700AEBFFB /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		A79CB8EF248D05B700AEBFFB /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		A79CB8CC248D05B300AEBFFB /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A7A6D22124E032F4003E7BF5 /* DHElectricityDetailView.swift in Sources */,
+				A7AC258824A79A3800F92481 /* DHSplitMoneyView.swift in Sources */,
+				A79CB8D8248D05B300AEBFFB /* ViewController.swift in Sources */,
+				A7A6D21F24E02AA4003E7BF5 /* DHTextType.swift in Sources */,
+				A756F2EA249FA96D00DC87CB /* DHNewsCellViewModel.swift in Sources */,
+				A75B265E24FB81C700686770 /* DHTableViewCell.swift in Sources */,
+				A75B265824FB755D00686770 /* DHNewsTextModel.swift in Sources */,
+				A79A193224A8E2D800F01EB4 /* DHElectricityBillCalculatorViewController.swift in Sources */,
+				A79CB907248D08B600AEBFFB /* DHArticleSourceModel.swift in Sources */,
+				A7DB8E9E24F2443600A03CF9 /* DHLabelType.swift in Sources */,
+				A797CF6124F4034B00A95EA5 /* DHFuelMileageView.swift in Sources */,
+				A79A193024A8DD2600F01EB4 /* DHSplitRate.swift in Sources */,
+				A7DB8EA224F2473C00A03CF9 /* DHLabel.swift in Sources */,
+				A79A192E24A8DC5700F01EB4 /* DHBiMonthlyConsumption.swift in Sources */,
+				A7DB8E9C24F2435500A03CF9 /* DHImageViewType.swift in Sources */,
+				A71E481024F6993D00F2F15A /* DHNewsText.swift in Sources */,
+				A797CF5E24F3FACD00A95EA5 /* DHFormField.swift in Sources */,
+				A78EA32524EB8E1E004B16E4 /* DHNewsDetailViewController.swift in Sources */,
+				A75547A424DB012500B88030 /* DHTextProperties.swift in Sources */,
+				A78C29F9248D3EC500556839 /* DHArticleTableViewCell.swift in Sources */,
+				A7DC15D824D85B7A00E28BDD /* DHViewProperties.swift in Sources */,
+				A7DC15D424D8558C00E28BDD /* DHTextField.swift in Sources */,
+				A79A193724A8E63800F01EB4 /* DHElectricityBillViewModel.swift in Sources */,
+				A791A29624E82E9200CCAD80 /* DHKeyboardAdaptive.swift in Sources */,
+				A79A192C24A8DACA00F01EB4 /* DHElectricityTarrifModel.swift in Sources */,
+				A78C29F5248D22D200556839 /* DHApiService.swift in Sources */,
+				A79CB8D4248D05B300AEBFFB /* AppDelegate.swift in Sources */,
+				A73BD28A24DEF7A100547BF9 /* DHStyles.swift in Sources */,
+				A7A6D21D24E0279D003E7BF5 /* DHText.swift in Sources */,
+				A75B265A24FB7B0000686770 /* DHNews.swift in Sources */,
+				A79CB905248D060400AEBFFB /* DHArticleModel.swift in Sources */,
+				A7DB8EA424F2498200A03CF9 /* DHImageView.swift in Sources */,
+				A7AC258624A798C400F92481 /* DHSplitMoneyViewController.swift in Sources */,
+				A79CB8D6248D05B300AEBFFB /* SceneDelegate.swift in Sources */,
+				A75547A224DAFFEC00B88030 /* DHTextFieldType.swift in Sources */,
+				A7A6D21B24E01D80003E7BF5 /* Utility.swift in Sources */,
+				A75B266224FB8B1700686770 /* DHNewsCell.swift in Sources */,
+				A756F2E8249F59B400DC87CB /* DHArticleCollectionViewCell.swift in Sources */,
+				A78BB6F924C49859003377D6 /* DHElectricityView.swift in Sources */,
+				A78C29F3248D225D00556839 /* DHNewsViewModel.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		A79CB8E2248D05B700AEBFFB /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A79CB8EB248D05B700AEBFFB /* DailyHubTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		A79CB8ED248D05B700AEBFFB /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A79CB8F6248D05B700AEBFFB /* DailyHubUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		A79CB8E8248D05B700AEBFFB /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = A79CB8CF248D05B300AEBFFB /* DailyHub */;
+			targetProxy = A79CB8E7248D05B700AEBFFB /* PBXContainerItemProxy */;
+		};
+		A79CB8F3248D05B700AEBFFB /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = A79CB8CF248D05B300AEBFFB /* DailyHub */;
+			targetProxy = A79CB8F2248D05B700AEBFFB /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		A79CB8D9248D05B300AEBFFB /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				A79CB8DA248D05B300AEBFFB /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		A79CB8DE248D05B600AEBFFB /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				A79CB8DF248D05B600AEBFFB /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		A79CB8F8248D05B700AEBFFB /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.2;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		A79CB8F9248D05B700AEBFFB /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.2;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		A79CB8FB248D05B700AEBFFB /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = DailyHub/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.karthi.DailyHub;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		A79CB8FC248D05B700AEBFFB /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = DailyHub/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.karthi.DailyHub;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		A79CB8FE248D05B700AEBFFB /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = DailyHubTests/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.2;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.karthi.DailyHubTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/DailyHub.app/DailyHub";
+			};
+			name = Debug;
+		};
+		A79CB8FF248D05B700AEBFFB /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = DailyHubTests/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.2;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.karthi.DailyHubTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/DailyHub.app/DailyHub";
+			};
+			name = Release;
+		};
+		A79CB901248D05B700AEBFFB /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = DailyHubUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.karthi.DailyHubUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = DailyHub;
+			};
+			name = Debug;
+		};
+		A79CB902248D05B700AEBFFB /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = DailyHubUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.karthi.DailyHubUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = DailyHub;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		A79CB8CB248D05B300AEBFFB /* Build configuration list for PBXProject "DailyHub" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				A79CB8F8248D05B700AEBFFB /* Debug */,
+				A79CB8F9248D05B700AEBFFB /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		A79CB8FA248D05B700AEBFFB /* Build configuration list for PBXNativeTarget "DailyHub" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				A79CB8FB248D05B700AEBFFB /* Debug */,
+				A79CB8FC248D05B700AEBFFB /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		A79CB8FD248D05B700AEBFFB /* Build configuration list for PBXNativeTarget "DailyHubTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				A79CB8FE248D05B700AEBFFB /* Debug */,
+				A79CB8FF248D05B700AEBFFB /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		A79CB900248D05B700AEBFFB /* Build configuration list for PBXNativeTarget "DailyHubUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				A79CB901248D05B700AEBFFB /* Debug */,
+				A79CB902248D05B700AEBFFB /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = A79CB8C8248D05B300AEBFFB /* Project object */;
+}

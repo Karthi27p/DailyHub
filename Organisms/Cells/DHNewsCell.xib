@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="15705" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="15706"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="DHNewsCell" customModule="DailyHub" customModuleProvider="target"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="DHNewsCell" id="XuH-m6-DYF" customClass="DHNewsCell" customModule="DailyHub" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="414" height="100"/>
+            <autoresizingMask key="autoresizingMask"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="XuH-m6-DYF" id="WRG-3r-VwZ">
+                <rect key="frame" x="0.0" y="0.0" width="414" height="100"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="uB9-I8-Old" customClass="DHNews" customModule="DailyHub" customModuleProvider="target">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="100"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                    </view>
+                </subviews>
+                <constraints>
+                    <constraint firstItem="uB9-I8-Old" firstAttribute="leading" secondItem="WRG-3r-VwZ" secondAttribute="leading" id="DUf-Cl-oW3"/>
+                    <constraint firstAttribute="trailing" secondItem="uB9-I8-Old" secondAttribute="trailing" id="Nlw-be-6xo"/>
+                    <constraint firstItem="uB9-I8-Old" firstAttribute="top" secondItem="WRG-3r-VwZ" secondAttribute="top" id="eEV-sc-I9z"/>
+                    <constraint firstAttribute="bottom" secondItem="uB9-I8-Old" secondAttribute="bottom" id="tpc-hh-jJF"/>
+                </constraints>
+            </tableViewCellContentView>
+            <connections>
+                <outlet property="newsView" destination="uB9-I8-Old" id="bEF-mT-iF9"/>
+            </connections>
+            <point key="canvasLocation" x="303" y="58"/>
+        </tableViewCell>
+    </objects>
+</document>

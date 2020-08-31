@@ -1,0 +1,73 @@
+
+{
+    "status": "ok",
+    "totalResults": 4,
+    "type": "Low Tension - Domestic (I-A)",
+    "cutOffLimit": 501,
+    "biMonthlyConsumption": [
+        {
+            "maxLimit": 100,
+            "fixedCharges": 0,
+            "splitRate": [
+                {
+                    "unit": 100,
+                    "chargePerUnit": 0
+                }
+            ]
+        },
+        {
+            "maxLimit": 200,
+            "fixedCharges": 20,
+            "splitRate": [
+                {
+                    "unit": 100,
+                    "chargePerUnit": 0
+                },
+                {
+                    "unit": 100,
+                    "chargePerUnit": 1.5
+                }
+            ]
+        },
+        {
+            "maxLimit": 500,
+            "fixedCharges": 30,
+            "splitRate": [
+                {
+                    "unit": 100,
+                    "chargePerUnit": 0
+                },
+                {
+                    "unit": 100,
+                    "chargePerUnit": 2
+                },
+                {
+                    "unit": 300,
+                    "chargePerUnit": 3
+                }
+            ]
+        },
+        {
+            "maxLimit": 501,
+            "fixedCharges": 50,
+            "splitRate":[
+                {
+                    "unit": 100,
+                    "chargePerUnit": 0
+                },
+                {
+                    "unit": 100,
+                    "chargePerUnit": 3.5
+                },
+                {
+                    "unit": 300,
+                    "chargePerUnit": 4.6
+                },
+                {
+                    "unit": 501,
+                    "chargePerUnit": 6.6
+                }
+            ]
+        }
+    ]
+}
