@@ -14,6 +14,8 @@
     }
     
     class DHApiService : NSObject {
+        
+        // Fetch Data from api
         static func fetchData <T> (requestUrl: URLRequest?, resultStruct: T.Type, completion: @escaping((Any?, Error?) -> ())) where T : Decodable {
             guard let _ = requestUrl, let url = requestUrl?.url else {
                 completion(nil, APIError.urlError(description: "Invalid Url"))
@@ -39,6 +41,7 @@
             
         }
         
+        // Fetch data from bundle
         static func fetchDataFromBundle<T> (resourceName: String, resultStruct: T.Type, completion: @escaping((Any?, Error?) -> ())) where T : Decodable {
                if let url = Bundle.main.url(forResource: resourceName, withExtension: "json") {
                    do {

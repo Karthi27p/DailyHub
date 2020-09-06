@@ -89,6 +89,7 @@ struct DHElectricityView: View {
         }
     }
     
+    // Clear label text
     func clearText() {
         self.previousReading = ""
         self.currentReading = ""
@@ -97,6 +98,7 @@ struct DHElectricityView: View {
         self.hideKeyboard()
     }
     
+    // Calculate reading results
     func calculateReading() -> [DHBillDetails] {
         
         self.hideKeyboard()
@@ -164,6 +166,7 @@ struct DHElectricityView: View {
             DHBillDetails(billCatergory: "Net Amount ₹", billValue: String(format: "%.2f" , result))]
     }
     
+    // Calculate mileage
     func calculateFuelMileage() -> [DHBillDetails] {
         self.hideKeyboard()
         let currentValue: Float = Float(self.currentReading) ?? 0.0

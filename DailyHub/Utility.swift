@@ -71,7 +71,7 @@ extension UIColor {
 
 extension UIView {
     
-    
+    //MARK: Load nib and set constraints
     func commonInit(_ nibName: String) {
         guard let view = loadViewFromNib(nibName) else {
             return
@@ -98,6 +98,7 @@ extension UIView {
         ])
     }
     
+    //MARK: Configure view properties
     func setViewStyle(_ viewStyle: DHViewProperties?) {
         guard let style = viewStyle else {
             return

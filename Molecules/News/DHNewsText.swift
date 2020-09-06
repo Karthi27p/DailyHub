@@ -16,6 +16,7 @@ import UIKit
     
     private let nibName = "DHNewsText"
     
+    //MARK: Initialization
     override init(frame: CGRect) {
         super.init(frame: frame)
         commonInit(nibName)
@@ -30,6 +31,8 @@ import UIKit
         commonInit(nibName)
     }
     
+    //MARK: Set Data and Styles
+    // Set data to labels used in news cell
     var newsTextDataModel: DHNewsTextModel? {
         didSet {
             guard let dataModel = newsTextDataModel else {
@@ -54,6 +57,7 @@ import UIKit
         }
     }
     
+    // Set styles for the labels
     private var labelStyle: DHStyleLabel? {
         didSet {
             guard let labelStyle = labelStyle else {
@@ -65,6 +69,7 @@ import UIKit
         }
     }
     
+    // Get label styles to be used
     private func configureStyle() {
         guard let styles = dhStyles, let labelStyles = styles.labels else {
             return

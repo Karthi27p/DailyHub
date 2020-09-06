@@ -31,13 +31,13 @@ struct DHSplitMoneyView: View {
         Section {
             TextField("Enter Amount", text: self.$totalAmount).keyboardType(.decimalPad)
             TextField("Enter number of persons", text: self.$persons).keyboardType(.decimalPad)
-//            Picker("Select number of persons", selection: self.$persons) {
-//
-//                    ForEach(2..<100) {
-//                        Text("\($0) Persons")
-//                    }
-//
-//            }
+            /* Picker("Select number of persons", selection: self.$persons) {
+
+                    ForEach(2..<100) {
+                        Text("\($0) Persons")
+                    }
+
+            } */
         }
             Section(header: Text("Select the tip percentage")) {
                 Picker("Tip Percentage", selection: self.$tipPercentage) {

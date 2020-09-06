@@ -18,6 +18,7 @@ class ViewController: UIViewController {
     let newsCategories = ["Top News","business", "entertainment", "health", "science", "sports", "technology"]
     let viewModel = DHNewsViewModel()
     
+    //MARK: Life cycle methods
     override func viewDidLoad() {
         super.viewDidLoad()
         tableView.estimatedRowHeight = 90
@@ -30,6 +31,7 @@ class ViewController: UIViewController {
         self.setTopNewsSelected()
     }
     
+    //MARK: UI and Data configuration
     func setTopNewsSelected() {
         guard let topNewsCell = self.collectionView.cellForItem(at: IndexPath.init(item: 0, section: 0)) as? DHArticleCollectionViewCell else {
             return
@@ -47,9 +49,9 @@ class ViewController: UIViewController {
             DispatchQueue.main.async {
                 strongSelf.newsArticles = data as? DHArticles
                 strongSelf.tableView.reloadData()
-//                if (strongSelf.newsArticles?.articles.count ?? 0 > 0) {
-//                    strongSelf.tableView.scrollToRow(at: IndexPath.init(item: 0, section: 0), at: .top, animated: false)
-//                }
+                /* if (strongSelf.newsArticles?.articles.count ?? 0 > 0) {
+                    strongSelf.tableView.scrollToRow(at: IndexPath.init(item: 0, section: 0), at: .top, animated: false)
+                } */
             }
         }
     }
@@ -93,6 +95,8 @@ class ViewController: UIViewController {
 }
 
 extension ViewController: UITableViewDelegate {
+    
+    //MARK: Table View Delegates
     func tableView(_ tableView: UITableView, willDisplay cell: UITableViewCell, forRowAt indexPath: IndexPath) {
         if (!self.displayedIndices.contains(indexPath)) {
             self.displayedIndices.append(indexPath)
@@ -114,6 +118,8 @@ extension ViewController: UITableViewDelegate {
 }
 
 extension ViewController: UITableViewDataSource {
+    
+    //MARK: Table View Data Source
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         return newsArticles?.articles.count ?? 0
     }
@@ -123,10 +129,10 @@ extension ViewController: UITableViewDataSource {
             return UITableViewCell()
         }
         //Uncomment for storyboard cell
-//        guard let cell = tableView.dequeueReusableCell(withIdentifier: "Cell") as? DHArticleTableViewCell else {
-//            return UITableViewCell()
-//        }
-//        cell.configure(cellViewModel: cellViewModel)
+        /* guard let cell = tableView.dequeueReusableCell(withIdentifier: "Cell") as? DHArticleTableViewCell else {
+            return UITableViewCell()
+        }
+        cell.configure(cellViewModel: cellViewModel) */
         
         let cellViewModel = DHNewsCellViewModel()
         cellViewModel.article = newsArticles?.articles[indexPath.row]
@@ -140,6 +146,8 @@ extension ViewController: UITableViewDataSource {
 }
 
 extension ViewController: UICollectionViewDataSource {
+    
+    //MARK: Collection View Data Source
     func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
         return newsCategories.count
     }
@@ -155,6 +163,8 @@ extension ViewController: UICollectionViewDataSource {
 }
 
 extension ViewController: UICollectionViewDelegate {
+    
+    //MARK: CollectionView Delegates
     func collectionView(_ collectionView: UICollectionView, didSelectItemAt indexPath: IndexPath) {
         self.displayedIndices = []
         self.collectionView.scrollToItem(at: indexPath, at: .left, animated: true)
@@ -174,6 +184,8 @@ extension ViewController: UICollectionViewDelegate {
 }
 
 extension ViewController: UIScrollViewDelegate {
+    
+    //MARK: Scroll View Delegates
     func scrollViewDidScroll(_ scrollView: UIScrollView) {
         if (scrollView == tableView) {
             let totalScroll = scrollView.contentSize.height - self.tableView.frame.height

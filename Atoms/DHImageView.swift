@@ -11,6 +11,7 @@ import UIKit
 
 class DHImageView: UIImageView {
     
+    //MARK: Initialization
     required init?(coder: NSCoder) {
         super.init(coder: coder)
     }
@@ -24,6 +25,7 @@ class DHImageView: UIImageView {
         imageViewStyle = style
     }
     
+    //MARK: ImageView Configuration
     var imageViewStyle: DHImageViewType? {
         didSet {
             guard let imageViewStyle = imageViewStyle else {

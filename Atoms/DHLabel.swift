@@ -11,6 +11,7 @@ import UIKit
 
 class DHLabel: UILabel {
     
+    //MARK: Initialization
     required init?(coder: NSCoder) {
         super.init(coder: coder)
     }
@@ -24,6 +25,7 @@ class DHLabel: UILabel {
         labelType = style
     }
     
+    //MARK: Label Configuration
     override func drawText(in rect: CGRect) {
         let edgeInset = contentEdgeInset
         super.drawText(in: rect.inset(by: edgeInset))

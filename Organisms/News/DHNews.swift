@@ -20,6 +20,7 @@ import UIKit
     
     var contentView:UIView?
     
+    //MARK: Initialization
     override init(frame: CGRect) {
         super.init(frame: frame)
         commonInit(nibName)
@@ -34,6 +35,8 @@ import UIKit
         commonInit(nibName)
     }
     
+    //MARK: Set Data and Styles
+    // Set data to the news cell
     public func setData(_ item: DHNewsCellViewModel){
         
         
