@@ -43,7 +43,7 @@ class DHNewsDetailViewController: UIViewController, WKNavigationDelegate {
         }
         progressView.leadingAnchor.constraint(equalTo: self.view.leadingAnchor, constant: 0).isActive = true
         progressView.setProgress(0.0, animated: true)
-        progressView.transform = progressView.transform.scaledBy(x: 1, y: 4)
+        progressView.transform = progressView.transform.scaledBy(x: 1, y: 1)
         progressView.backgroundColor = .gray
         progressView.tintColor = .blue
     }

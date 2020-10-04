@@ -52,7 +52,7 @@ struct DHSplitMoneyView: View {
                 }
         }
            
-            }.padding(.top, 170).keyboardadaptive().onTapGesture {
+            }.keyboardadaptive().onTapGesture {
                 self.hideKeyboard()
             }
             .navigationBarTitle("Split Money", displayMode: .inline)

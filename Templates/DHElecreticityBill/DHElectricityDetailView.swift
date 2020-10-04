@@ -43,8 +43,8 @@ struct DHElectricityDetailView: View {
                 DHUnitLabel()
             }
         }
-            
-        .navigationBarItems(leading: Button(action: { self.isActive = false }, label: { Text("< Back") })).navigationBarTitle("Bill Details", displayMode: .inline)
+        
+        .navigationBarTitle("Split Money", displayMode: .inline)
     }
 }
 

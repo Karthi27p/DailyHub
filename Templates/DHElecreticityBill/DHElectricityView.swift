@@ -60,15 +60,13 @@ struct DHElectricityView: View {
                             DHFuelMileageView(fuelQuantity: self.$fuelQuantity, fuelPrice: self.$fuelPrice)
                         }
                         HStack {
-                            Button(action: {
+                            Button("Clear" ,action: {
                                 self.clearText()
-                            }) {Text("Clear").font(.headline).padding(.leading, UIScreen.main.bounds.size.width/2 - 100).padding(.top, 20)
-                                
-                            }
+                            }).font(.headline).frame(width: 80, height: 30, alignment: .center).position(x: UIScreen.main.bounds.width/2 - 80).padding(.top, 30)
                             
                             NavigationLink(destination: DHElectricityDetailView(isActive: self.$isActive, billDetails: self.defaultIndex == 0 ? self.billDetailsResult : self.fuelBillDetailsResult, showUnitLabel: self.defaultIndex == 1), isActive: self.$isActive) {
-                                Text("Calculate").font(.headline).padding(.leading, 50).padding(.top, 20)
-                            }.simultaneousGesture(TapGesture().onEnded{
+                                Text("Calculate").font(.headline)
+                            }.frame(width: 80, height: 30, alignment: .center).position(x: 50).padding(.top, 30).simultaneousGesture(TapGesture().onEnded{
                                 if (self.defaultIndex == 0) {
                                     self.billDetailsResult = self.calculateReading()
                                 } else {
@@ -82,7 +80,7 @@ struct DHElectricityView: View {
                     }
                     
                 }.padding(.horizontal, 15)
-            }.padding(.top, 180).keyboardadaptive().onTapGesture {
+            }.padding(.top, 10).keyboardadaptive().onTapGesture {
                 self.hideKeyboard()
             }
             .navigationBarTitle("Bill Calculator", displayMode: .inline)
