@@ -55,11 +55,15 @@ extension UIResponder {
 
 struct KeyboardAdaptive: ViewModifier {
     @State private var topPadding: CGFloat = 0
+    @State private var initialFrameHeight: CGFloat = 0
     func body(content: Content) -> some View {
         GeometryReader{ geometry in
             content.padding(.top, self.topPadding).onReceive(Publishers.keyboardHeight) { keyboardHeight in
-                   
-                    let keyboardTop = geometry.frame(in: .global).height - keyboardHeight
+                
+                if (initialFrameHeight == 0) {
+                    initialFrameHeight = geometry.frame(in: .global).height
+                }
+                let keyboardTop = initialFrameHeight - keyboardHeight
                     
                 let focusedTextInputBottom = UIResponder.currentFirstResponder?.globalFrame.minY ?? 0
                     
